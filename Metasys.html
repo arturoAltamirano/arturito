@@ -132,6 +132,18 @@
             color: #75C5E8;
         }
 
+        .row {
+            display: flex;          /* makes children line up horizontally */
+            justify-content: flex-start;  /* aligns items to the left */
+            gap: 20px;              /* optional spacing between images */
+        }
+
+        .image-box img {
+            width: 200px;           /* control size */
+            height: auto;
+            display: block;
+        }
+
         @media (min-width: 768px) {
             .container {
                 flex-direction: row;
@@ -204,5 +216,6 @@
 
         </div>
     </div>
+
 </body>
 </html>
