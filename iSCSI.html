@@ -154,6 +154,19 @@
                 max-width: 100%;
             }
         }
+
+        .row {
+            display: flex;          /* makes children line up horizontally */
+            justify-content: flex-start;  /* aligns items to the left */
+            gap: 20px;              /* optional spacing between images */
+        }
+
+        .image-box img {
+            width: auto;           /* control size */
+            height: auto;
+            display: block;
+        }
+
     </style>
 </head>
 
@@ -195,12 +208,11 @@
                 </div>
 
                 <div class="image-box">
-                    <img src="https://arturoAltamirano.github.io/arturito/static/workstations2.png" alt="Description of Image 2">
+                    <img src="https://arturoAltamirano.github.io/arturito/static/workstation2.png" alt="Description of Image 2">
                 </div>
 
             </div>
 
-            
             <div class="header">
                 Outcomes
             </div>
