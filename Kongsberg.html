@@ -49,9 +49,10 @@
         }
     </style>
 </head>
+
 <body>
 
-    <script>
+   <script>
     fetch("/arturito/nav.html")
         .then(res => res.text())
         .then(html => {document.getElementById("navbar").innerHTML = html;});
@@ -60,7 +61,7 @@
     <div id="navbar"></div>
 
     <div class="content">
-        
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,6 +135,18 @@
             color: #75C5E8;
         }
 
+        .row {
+            display: flex;          /* makes children line up horizontally */
+            justify-content: flex-start;  /* aligns items to the left */
+            gap: 20px;              /* optional spacing between images */
+        }
+
+        .image-box img {
+            width: auto;           /* control size */
+            height: auto;
+            display: block;
+        }
+
         @media (min-width: 768px) {
             .container {
                 flex-direction: row;
@@ -161,72 +174,55 @@
     <div class="container">
         <div class="body">
             <div class="header">
-                Machine Learning
+                Foundations
             </div>
 
             <div>
-                I took Machine Learning as part of my coursework at Tulane, and enjoyed tremendously. 
-                Below are a series of demonstrations of the assignments I completed during my time in this course.
-                These are fundamental arithmetic and scientific methods used to manipulate data, and are the building blocks of many of the ML practices used today.
+                While working at the NASA Michoud Assembly Facility, I interacted with the Johnson Controls family of controllers. As well as Johnson Controls Metasys software. 
+                I really enjoyed seeing how these devices worked and learning how facilities are networked into a centrally controllable site.
             </div>
 
             <div class="header">
-                The Perceptron and Linear Regression
+                Physical Devices
             </div>
 
             <div>
-                The perception algorithm is a linear learning algorithm used for binary classification. You can see 
-                and assignment done for this class which displays it below.
+                There are 3 main devices in the Johnson networking solution. The FEC or Field Equipment Controller is a device level controller which essentially gathers all sensor output 
+                from a given assembly or machine. A modern unit is pictured right below, and a slightly older unit pictured left. Also pictured
+                is a Network Automation Engine, which is a segment or area level controller that accumulates all FEC transmissions and relays 
+                them to a central server via BACnet IP communications. This server can then render these signals locally or remotely as traditional TCP/IP traffic.
+            </div>
 
+            <div class="row">
 
+                <div class="image-box">
+                    <img src="https://arturoAltamirano.github.io/arturito/static/controller.png" alt="Description of Image 1">
+                </div>
+
+                <div class="image-box">
+                    <img src="https://arturoAltamirano.github.io/arturito/static/controller2.png" alt="Description of Image 2">
+                </div>
+
+            </div>
+
+            <div class="header">
+                Graphics
+            </div>
+
+            <div>
+            I worked on or created ~30 graphics within the JCI Metasys agent used to monitor machinery and various assemblies throughout the facility.
+            These graphics are facilitated by a central server, and are rendered to stationary personel to monitor and control in coordination with technicians in the field.
+            An example graphic with a series of AHUs undergoing repair is displayed below.
+            <div>
+
+            <div class="image-box">
+                <img src="https://arturoAltamirano.github.io/arturito/static/graphics.png" alt="Description of Image 1">
             </div>
                 
-
-            <div>
-                <iframe src="https://arturoAltamirano.github.io/arturito/static/HW3.5_arturoAltamirano.html" width="100%" height="800px" style="border: none;"></iframe>
-            </div>
-
-            <div class="header">
-                Regularization and Legendre Transformation
-            </div>
-
-            <div>
-                Regularization and the Legendre Transformation can be used to more accurately predict the true value of a function. 
-                Where an unregularized hypothesis may be overly reactionary to fluctuations in small datasets, regularization can be used 
-                to smoothen your predicted outcomes.
-            </div>
-                
-
-            <div>
-                <iframe src="https://arturoAltamirano.github.io/arturito/static/HW4.5_arturoAltamirano.html" width="100%" height="800px" style="border: none;"></iframe>
-            </div>
-
-            <div class="header">
-                Support Vector Machines
-            </div>
-
-            <div>
-                Support Vector Machines are supervised models that can be used for regression analysis and, in this case, augmented linear classification.
-
-            </div>
-                
-
-            <div>
-                <iframe src="https://arturoAltamirano.github.io/arturito/static/HW5_arturoAltamirano.html" width="100%" height="800px" style="border: none;"></iframe>
-            </div>
-
-            <div class="header">
-                Conclusion
-            </div>
-
-            <div>
-                I took Machine Learning as part of my coursework at Tulane, and enjoyed tremendously. 
-                Below are a series of demonstrations of the assignments I completed during my time in this course.
-                These are fundamental arithmetic and scientific methods used to manipulate data, and are the building blocks of many of the ML practices used today.
             </div>
 
         </div>
-
     </div>
+
 </body>
 </html>

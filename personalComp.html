@@ -49,9 +49,10 @@
         }
     </style>
 </head>
+
 <body>
 
-    <script>
+   <script>
     fetch("/arturito/nav.html")
         .then(res => res.text())
         .then(html => {document.getElementById("navbar").innerHTML = html;});
@@ -60,7 +61,7 @@
     <div id="navbar"></div>
 
     <div class="content">
-        
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,6 +135,18 @@
             color: #75C5E8;
         }
 
+        .row {
+            display: flex;          /* makes children line up horizontally */
+            justify-content: flex-start;  /* aligns items to the left */
+            gap: 20px;              /* optional spacing between images */
+        }
+
+        .image-box img {
+            width: auto;           /* control size */
+            height: auto;
+            display: block;
+        }
+
         @media (min-width: 768px) {
             .container {
                 flex-direction: row;
@@ -161,72 +174,89 @@
     <div class="container">
         <div class="body">
             <div class="header">
-                Machine Learning
+                Motivations
             </div>
 
             <div>
-                I took Machine Learning as part of my coursework at Tulane, and enjoyed tremendously. 
-                Below are a series of demonstrations of the assignments I completed during my time in this course.
-                These are fundamental arithmetic and scientific methods used to manipulate data, and are the building blocks of many of the ML practices used today.
+                I decided I wanted to build a personal computer after working with HP B2600 workstations for Syncom. 
+                This was before the price explosions of RAM and graphics cards, and I felt it would be cool to do my school assignments 
+                on a machine I built myself, rather than on Colab from my laptop.
             </div>
 
             <div class="header">
-                The Perceptron and Linear Regression
+                Components
             </div>
 
             <div>
-                The perception algorithm is a linear learning algorithm used for binary classification. You can see 
-                and assignment done for this class which displays it below.
+                Processor: Intel i5 13600KF
+            </div>
 
+            <div>
+                Graphics Card: Sparkle 'ROC' Intel A770 
+            </div>
 
+            <div>
+                Memory and Storage: Crucial 5600 mHz 32GB Kit and 1TB SSD
+            </div>
+
+            <div>
+                Memory and Storage: Crucial 5600 mHz 32GB Kit and a 1TB 'P3' SSD
+            </div>
+
+            <div> 
+                Motherboard: Gigabyte Aorus Pro B760I (mini-ITX)
+            </div>
+
+            <div> 
+                Case and Cooling: Corsair 2000D Airflow and an NZXT Kraken 360
+            </div>
+
+            <div class="header">
+                Experience
+            </div>
+
+            <div>
+                This case was on closing sale for $60 and is one of the few ITX cases that can fit a 360mm AIO.
+                Theres a side rail that comes with it that is explicitly designed to fit a full size cooler, which I thought was really cool.
+                The A770 is a weak card, but has good vRAM capacity and decent overclocking capacity. It's the cheapest way to get 
+                16GB of vRAM, but has overall performance that is now a couple generations old. 
+                Overall this is a functional build for the time being, I will likely build another one soon when prices return to feasible ranges. 
+            </div>
+
+            <div class="row">
+
+                <div class="image-box">
+                    <img src="https://arturoAltamirano.github.io/arturito/static/IMG_1547.jpeg" alt="Description of Image 1">
+                </div>
+
+                <div class="image-box">
+                    <img src="https://arturoAltamirano.github.io/arturito/static/IMG_1167.jpeg" alt="Description of Image 2">
+                </div>
+
+                <div class="image-box">
+                    <img src="https://arturoAltamirano.github.io/arturito/static/IMG_0836.jpeg" alt="Description of Image 1">
+                </div>
+
+            </div>
+
+            <div class="header">
+                Graphics
+            </div>
+
+            <div>
+            I worked on or created ~30 graphics within the JCI Metasys agent used to monitor machinery and various assemblies throughout the facility.
+            These graphics are facilitated by a central server, and are rendered to stationary personel to monitor and control in coordination with technicians in the field.
+            An example graphic with a series of AHUs undergoing repair is displayed below.
+            <div>
+
+            <div class="image-box">
+                <img src="https://arturoAltamirano.github.io/arturito/static/graphics.png" alt="Description of Image 1">
             </div>
                 
-
-            <div>
-                <iframe src="https://arturoAltamirano.github.io/arturito/static/HW3.5_arturoAltamirano.html" width="100%" height="800px" style="border: none;"></iframe>
-            </div>
-
-            <div class="header">
-                Regularization and Legendre Transformation
-            </div>
-
-            <div>
-                Regularization and the Legendre Transformation can be used to more accurately predict the true value of a function. 
-                Where an unregularized hypothesis may be overly reactionary to fluctuations in small datasets, regularization can be used 
-                to smoothen your predicted outcomes.
-            </div>
-                
-
-            <div>
-                <iframe src="https://arturoAltamirano.github.io/arturito/static/HW4.5_arturoAltamirano.html" width="100%" height="800px" style="border: none;"></iframe>
-            </div>
-
-            <div class="header">
-                Support Vector Machines
-            </div>
-
-            <div>
-                Support Vector Machines are supervised models that can be used for regression analysis and, in this case, augmented linear classification.
-
-            </div>
-                
-
-            <div>
-                <iframe src="https://arturoAltamirano.github.io/arturito/static/HW5_arturoAltamirano.html" width="100%" height="800px" style="border: none;"></iframe>
-            </div>
-
-            <div class="header">
-                Conclusion
-            </div>
-
-            <div>
-                I took Machine Learning as part of my coursework at Tulane, and enjoyed tremendously. 
-                Below are a series of demonstrations of the assignments I completed during my time in this course.
-                These are fundamental arithmetic and scientific methods used to manipulate data, and are the building blocks of many of the ML practices used today.
             </div>
 
         </div>
-
     </div>
+
 </body>
 </html>
