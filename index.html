@@ -51,16 +51,10 @@
 </head>
 <body>
 
+    <div id="navbar"></div>
 
-    <div class="overlay"></div>
-    <nav>
-        <a href="/arturito/index.html">Home</a>
-        <a href="/arturito/CV.html">Resume</a>
-        <a href="/arturito/extra.html">Blog</a>
-    </nav>
     <div class="content">
         
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,12 +151,21 @@
     </style>
 </head>
 
+<script>
+fetch("/arturito/nav.html")
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("navbar").innerHTML = html;
+  });
+</script>
+
+
 <body>
 
     <div class="container">
 
         <div class="body">
-            
+
             <div class="header">
                 Arturo Altamirano
             </div>
@@ -173,25 +176,45 @@
                 and a passion for all forms and applications of technology.
             </div>
 
-            
             <div class="header">
                 News and Recent Events
             </div>
 
+        </br>
+
             <div>
-                (February, 2025) I have completed my time at Tulane, graduating with a Master of Science in Computer Science!
+                (January, 2025) I have begun working at Kongsberg Maritimne as a Field Service Engineer.
             </div>
+
+        </br>
 
             <div>
                 (December, 2025) I have completed my time at Tulane, graduating with a Master of Science in Computer Science!
             </div>
 
+        </br>
+
             <div>
                 (May, 2025) I am currently interning with Gallo Mechanical as a software developer in their buidling information modeling department. 
             </div>
 
+        </br>
+
             <div>
                 (April, 2025) I have completed my second semester at Tulane!
+            </div>
+
+        </br>
+
+            <div>
+                (August, 2024) I have begun my time at Tulane University!
+            </div>
+
+        </br>
+
+            <div>
+                (May, 2024) I am working as an intern at NASA's Michoud Assembly Facility.
+                I am starting this website to document my endeavors as a student and professional.
             </div>
             
         </div>
