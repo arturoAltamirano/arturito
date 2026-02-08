@@ -51,15 +51,16 @@
 </head>
 
 <body>
+
+   <script>
+    fetch("/arturito/nav.html")
+        .then(res => res.text())
+        .then(html => {document.getElementById("navbar").innerHTML = html;});
+    </script>
     
-    <div class="overlay"></div>
-    <nav>
-        <a href="/arturito/index.html">Home</a>
-        <a href="/arturito/CV.html">Resume</a>
-        <a href="/arturito/extra.html">Projects</a>
-    </nav>
+    <div id="navbar"></div>
+
     <div class="content">
-        
 
 <!DOCTYPE html>
 <html lang="en">
@@ -187,7 +188,9 @@
 
             <div>
                 There are 3 main devices in the Johnson networking solution. The FEC or Field Equipment Controller is a device level controller which essentially gathers all sensor output 
-                from a given assembly or machine. A modern unit is pictured left below, and a slightly older unit pictured right. 
+                from a given assembly or machine. A modern unit is pictured right below, and a slightly older unit pictured left. Also pictured
+                is a Network Automation Engine, which is a segment or area level controller that accumulates all FEC transmissions and relays 
+                them to a central server via BACnet IP communications. This server can then render these signals locally or remotely as traditional TCP/IP traffic.
             </div>
 
             <div class="row">
@@ -208,7 +211,7 @@
 
             <div>
             I worked on or created ~30 graphics within the JCI Metasys agent used to monitor machinery and various assemblies throughout the facility.
-            These graphics are facilitated by a central server,and are rendered to stationary personel to monitor and control in coordination with technicians in the field.
+            These graphics are facilitated by a central server, and are rendered to stationary personel to monitor and control in coordination with technicians in the field.
             An example graphic with a series of AHUs undergoing repair is displayed below.
             <div>
 

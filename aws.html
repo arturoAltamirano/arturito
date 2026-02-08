@@ -51,7 +51,14 @@
 </head>
 <body>
 
+    <script>
+    fetch("/arturito/nav.html")
+        .then(res => res.text())
+        .then(html => {document.getElementById("navbar").innerHTML = html;});
+    </script>
+    
     <div id="navbar"></div>
+
     <div class="content">
         
 <!DOCTYPE html>

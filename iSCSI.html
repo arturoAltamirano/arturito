@@ -51,16 +51,16 @@
 </head>
 <body>
 
+<script>
+    fetch("/arturito/nav.html")
+        .then(res => res.text())
+        .then(html => {document.getElementById("navbar").innerHTML = html;});
+    </script>
+    
+    <div id="navbar"></div>
 
-    <div class="overlay"></div>
-    <nav>
-        <a href="/arturito/index.html">Home</a>
-        <a href="/arturito/CV.html">Resume</a>
-        <a href="/arturito/extra.html">Blog</a>
-    </nav>
     <div class="content">
         
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
