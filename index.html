@@ -1,237 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>  - Home</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: black;
-            z-index: 0;
-        }
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #285C4D;
-            margin-bottom: 10px;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-            margin: 10px;
-        }
+  <meta charset="UTF-8">
+  <title>Arturo Altamirano - Home</title>
 
-        nav a:hover {
-            color: #78BE20;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .content {
-            position: relative;
-            z-index: 2;
-            padding-top: 10px; /* Ensure content is not hidden under the nav */
-        }
-    </style>
-</head>
-<body>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <div id="navbar"></div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+    }
 
-    <div class="content">
-        
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 25px;
-            color: white;
-            margin-top: 25px;
-            padding: 20px;
-            background-color: #333;
-        }
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: black;
+      z-index: 0;
+    }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            max-width: 1500px;
-            margin: 0 auto;
-        }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #285C4D;
+      z-index: 1000;
+    }
 
-        .header {
-            font-size: 40px;
-            margin-bottom: 10px;
-            margin-top: 20px;
-            text-align: left;
-            color: #285C4D;
-        }
+    nav a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      margin: 10px;
+    }
 
-        .body {
-            text-align: justify;
-            max-width: 60%;
-            margin: 0 auto;
-        }
+    nav a:hover {
+      color: #78BE20;
+    }
 
-        .image-box {
-            text-align: center;
-            margin-top: 40px;
-        }
+    .content {
+      position: relative;
+      z-index: 2;
+      padding-top: 70px;
+    }
 
-        .image-box img {
-            max-width: 100%;
-            height: 400px;
-            margin-left: 15px;
-        }
+    .container {
+      display: flex;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        .image-box2 img {
-            max-width: 100%;
-            height: 180px;
-            margin-top: 15px;
-            margin-left: 15px;
-        }
+    .header {
+      font-size: 40px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      color: #285C4D;
+    }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            margin-left: 15px;
-        }
+    .body {
+      max-width: 60%;
+    }
 
-        .social-icons a {
-            color: white;
-            font-size: 24px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #75C5E8;
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-            }
-
-            .body {
-                max-width: 60%;
-            }
-
-            .images {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-top: 25px;
-                max-width: 100%;
-            }
-        }
-    </style>
+    .images {
+      margin-left: 40px;
+    }
+  </style>
 </head>
 
-<script>
-fetch("/arturito/nav.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("navbar").innerHTML = html;
-  });
-</script>
-
-
 <body>
+  <div id="navbar"></div>
 
+  <div class="content">
     <div class="container">
 
-        <div class="body">
+      <div class="body">
 
-            <div class="header">
-                Arturo Altamirano
-            </div>
+        <div class="header">Arturo Altamirano</div>
 
-            <div>
-                Field Service Engineer with a strong background in automation, computer networks, and industrial
-                systems. Combines a solid academic foundation in computer science with extensive hands-on engineering experience
-                and a passion for all forms and applications of technology.
-            </div>
+        <p>
+          Field Service Engineer with a strong background in automation...
+        </p>
 
-            <div class="header">
-                News and Recent Events
-            </div>
+        <div class="header">News and Recent Events</div>
 
-        </br>
+        <p>(January, 2025) I have begun working at Kongsberg Maritime...</p>
 
-            <div>
-                (January, 2025) I have begun working at Kongsberg Maritimne as a Field Service Engineer.
-            </div>
+      </div>
 
-        </br>
+      <div class="images">
+        <img src="/arturito/static/arturo.png" height="400">
 
-            <div>
-                (December, 2025) I have completed my time at Tulane, graduating with a Master of Science in Computer Science!
-            </div>
-
-        </br>
-
-            <div>
-                (May, 2025) I am currently interning with Gallo Mechanical as a software developer in their buidling information modeling department. 
-            </div>
-
-        </br>
-
-            <div>
-                (April, 2025) I have completed my second semester at Tulane!
-            </div>
-
-        </br>
-
-            <div>
-                (August, 2024) I have begun my time at Tulane University!
-            </div>
-
-        </br>
-
-            <div>
-                (May, 2024) I am working as an intern at NASA's Michoud Assembly Facility.
-                I am starting this website to document my endeavors as a student and professional.
-            </div>
-            
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/arturo-altamirano-462a26180/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/arturoAltamirano" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
+      </div>
 
-        <div class="images">
-            <div class="image-box">
-                <img src="https://arturoAltamirano.github.io/arturito/static/arturo.png" alt="Profile Picture">
-            </div>
+    </div>
+  </div>
 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/arturo-altamirano-462a26180/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/arturoAltamirano" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-
-        </div>
-    </div> 
+  <!-- LOAD SHARED NAV -->
+  <script>
+    fetch("/arturito/nav.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("navbar").innerHTML = html;
+      });
+  </script>
 
 </body>
-
 </html>
