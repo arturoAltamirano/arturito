@@ -49,22 +49,17 @@
         }
     </style>
 </head>
-
-<script>
-fetch("/arturito/nav.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("navbar").innerHTML = html;
-  });
-</script>
-
 <body>
-
+    <script>
+    fetch("/arturito/nav.html")
+        .then(res => res.text())
+        .then(html => {document.getElementById("navbar").innerHTML = html;});
+    </script>
+    
     <div id="navbar"></div>
 
     <div class="content">
         
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
